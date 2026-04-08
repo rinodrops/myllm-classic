@@ -50,6 +50,8 @@ Hotkey syntax: `modifier+key` or `modifier+modifier+key`. Supported modifiers: `
 
 ### Via menu bar
 
+<img src="assets/menubar.png" width="240">
+
 Click the menu bar icon to see all configured tasks and translation. Click any item to run it against the current clipboard contents.
 
 The menu also provides:
@@ -58,9 +60,16 @@ The menu also provides:
 - **Open Config Folder** — opens `~/.config/myllm/` in Finder
 - **Quit My LLM** — exits the app
 
-### Scrolling the result
+### Result window
 
-The output window scrolls automatically during streaming. You can scroll up at any time to review earlier output; scrolling back to the bottom re-enables auto-scroll.
+<img src="assets/window.png" width="480">
+
+The window is split into two panes:
+
+- **Input** (top) — the text captured from your selection or clipboard, shown for reference
+- **Output** (bottom) — the LLM response, streamed in real time as it is generated
+
+The output scrolls automatically during streaming. You can scroll up at any time to review earlier content; scrolling back to the bottom re-enables auto-scroll. Once processing completes, a **Copy** button appears in the output header to copy the result manually.
 
 ## Configuration
 
