@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>jp.emotiongraphics.myllm</string>
+
+    <key>CFBundleName</key>
+    <string>My LLM</string>
+
+    <key>CFBundleDisplayName</key>
+    <string>My LLM</string>
+
+    <key>CFBundleExecutable</key>
+    <string>My LLM</string>
+
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <key>CFBundleVersion</key>
+    <string>100</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright © 2025 Rino, eMotionGraphics Inc. All rights reserved.</string>
+
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+
+    <key>LSUIElement</key>
+    <true/>
+
+    <!-- Required for sending Cmd+C to the source app to capture selected text -->
+    <key>NSAccessibilityUsageDescription</key>
+    <string>My LLM uses Accessibility to copy selected text from other apps when you trigger a task. Without this, only clipboard contents are used.</string>
+
+    <!-- Required for reading selected text via Accessibility -->
+    <key>NSAppleEventsUsageDescription</key>
+    <string>My LLM uses AppleEvents to read selected text from other applications.</string>
+</dict>
+</plist>

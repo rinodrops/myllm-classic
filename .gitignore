@@ -1,0 +1,10 @@
+# Build outputs
+build/
+release/
+
+# OS-specific files
+.DS_Store
+*.swp
+
+# Root-level dot-directories (.nova, .vscode, .idea, etc.)
+/.*/
