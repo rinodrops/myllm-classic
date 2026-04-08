@@ -168,7 +168,7 @@ make notary-setup
 
 # Full pipeline: bundle → sign → notarize → zip
 make dist
-# Output: release/My LLM-1.0.0.zip
+# Output: release/My LLM-*.zip
 ```
 
 ### Make targets

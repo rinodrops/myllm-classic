@@ -440,7 +440,11 @@ final class LLMProcessor: ObservableObject {
 
         errPipe.fileHandleForReading.readabilityHandler = { [weak self] fh in
             let data = fh.availableData
-            if !data.isEmpty, let text = String(data: data, encoding: .utf8) {
+            if data.isEmpty {
+                errPipe.fileHandleForReading.readabilityHandler = nil
+                return
+            }
+            if let text = String(data: data, encoding: .utf8) {
                 self?.stderrBuffer += text
             }
         }

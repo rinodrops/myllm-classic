@@ -16,7 +16,7 @@ BUILD_BINARY    := $(BUILD_DIR)/$(BINARY_NAME)
 BIN_DIR         := $(RESOURCES_DIR)/bin
 
 # App version (used for ZIP filename)
-VERSION         := 1.0.0
+VERSION         := 1.0.1
 
 # Dependency versions
 JQ_VERSION          := 1.8.1
