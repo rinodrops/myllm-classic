@@ -1,6 +1,8 @@
-# My LLM
+# My LLM Classic
 
 A macOS menu bar app for running personal LLM tasks with a global hotkey. Select text in any app, press a hotkey, and receive the processed result in a floating window; the response is automatically copied to your clipboard.
+
+This repository is the frozen Classic GUI. New development lives in [myllm](https://github.com/rinodrops/myllm).
 
 Powered by [myllm-cli](https://github.com/rinodrops/myllm-cli). All LLM logic lives in the companion shell script; the app is a thin macOS shell around it.
 
@@ -26,7 +28,7 @@ No Homebrew, no Python, no runtime dependencies. All binaries (`jq`, `whichlang-
 
 ## Installation
 
-1. Download `My LLM-*.zip` from [Releases](https://github.com/rinodrops/myllm/releases)
+1. Download `My LLM-*.zip` from [Releases](https://github.com/rinodrops/myllm-classic/releases)
 2. Unzip and move `My LLM.app` to `/Applications`
 3. Launch the app — it appears in the menu bar
 4. On first launch, a starter `~/.config/myllm/config.toml` is created automatically
@@ -144,8 +146,8 @@ Requires Xcode Command Line Tools (`xcode-select --install`).
 
 ```bash
 # Clone
-git clone https://github.com/rinodrops/myllm.git
-cd myllm
+git clone https://github.com/rinodrops/myllm-classic.git
+cd myllm-classic
 
 # Quick build (current architecture, for development)
 make build
